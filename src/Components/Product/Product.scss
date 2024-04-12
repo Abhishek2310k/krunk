@@ -1,0 +1,123 @@
+.product {
+    width: 95%;
+    margin: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 0;
+    transition: transform 0.3s ease-out; // Add transition effect
+    transform: translateY(120%); // Start below the view
+    &.show {
+        transform: translateY(0); // Move into view
+    }
+    .r1 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .tags {
+            display: flex;
+            overflow: scroll;
+            gap: 10px;
+            scrollbar-width: none;
+            .tag {
+                padding: 5px 10px;
+                border: 1px solid #4C82EF;
+                border-radius: 5px;
+                white-space: nowrap;
+                background-color: #F2F7FF;
+                font-size: 13px;
+                color: #4C82EF;
+            }
+        }
+        .title {
+            font-size: 13px;
+            color: #949494;
+        }
+    } 
+    .r3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: #949494;
+            align-items: center;
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img {
+                    height: 15px;
+                }
+            }
+        }
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            scrollbar-width: none;
+            .tag {
+                padding: 5px 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                white-space: nowrap;
+                background-color: #F4F4F4;
+                font-size: 13px;
+                color: gray;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+    .r2 {
+        .item {
+            background: linear-gradient(114.92deg, #E6EEFF 34.14%, #FAFCFF 105.26%);
+            padding: 10px;
+            border-radius: 20px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .title {
+                padding: 10px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: white;
+                .name {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .num {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: #949494;
+                    }
+                    .item_name {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+                .desc {
+                    font-weight: 400;
+                    color: #333333;
+                    font-family: "Poppins",sans-serif;
+                }
+            }
+        }
+    }
+}
+// .hidden {
+//     display: none;
+// }
+// .show {
+//     display: initial;
+// }

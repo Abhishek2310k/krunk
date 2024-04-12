@@ -1,0 +1,51 @@
+.chats {
+    height: 100%;
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    padding-top: 30px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    .received {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        .content {
+            width: 60%;
+            padding: 10px;
+            border-radius: 20px;
+            background: linear-gradient(100.24deg, #E6EEFF 13.91%, #FFFFFF 116.73%);
+        }
+        .time {
+            font-size: 10px;
+            padding-left: 10px;
+        }
+    }
+    .sent {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        .content {
+            width: 60%;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #DCF7C5;
+        }
+        .time {
+            font-size: 10px;
+            padding-right: 10px;
+        }
+    }
+    .spec {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
